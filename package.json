@@ -1,0 +1,46 @@
+{
+  "name": "algotrading-new-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.5",
+    "@react-three/fiber": "^9.3.0",
+    "@syncfusion/ej2": "^31.1.18",
+    "@syncfusion/ej2-base": "^31.1.17",
+    "@syncfusion/ej2-react-calendars": "^31.1.19",
+    "@syncfusion/ej2-react-dropdowns": "^31.1.18",
+    "@syncfusion/ej2-react-grids": "^31.1.17",
+    "@syncfusion/ej2-react-notifications": "^31.1.17",
+    "@syncfusion/ej2-react-popups": "^31.1.17",
+    "@tailwindcss/vite": "^4.1.13",
+    "framer-motion": "^12.23.12",
+    "jspdf": "^3.0.2",
+    "lucide-react": "^0.542.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2",
+    "rxjs": "^7.8.2",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "vite": "^7.1.2"
+  }
+}

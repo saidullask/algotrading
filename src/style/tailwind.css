@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body { @apply antialiased; }
+
+  /* Don't use @apply for X/opacity utilities (unsupported) */
+  ::selection {
+    /* emerald-500 with 30% alpha */
+    background-color: rgb(16 185 129 / 0.30);
+    color: #fff; /* same as @apply text-white */
+  }
+}

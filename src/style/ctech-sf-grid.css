@@ -1,0 +1,71 @@
+/* ================================
+   CTech — Syncfusion ComboBox match
+   ================================ */
+
+:root {
+  --ct-bg: rgba(2, 6, 23, 0.60);         /* slate-950/60 */
+  --ct-border: rgba(51, 65, 85, 0.70);   /* slate-700/70 */
+  --ct-text: #e2e8f0;                    /* slate-100 */
+  --ct-muted: #94a3b8;                   /* slate-400 */
+  --ct-ring: rgba(16,185,129,0.50);      /* emerald ring */
+  --ct-ring-border: rgba(16,185,129,0.40);
+  --ct-radius: 12px;                     /* rounded-xl */
+  --ct-height: 42px;                     /* same as other inputs */
+  --ct-pad-y: 10px;                      /* py-2.5 */
+  --ct-pad-x: 12px;                      /* px-3 */
+}
+
+/* Root wrapper (Syncfusion adds e-control-wrapper + e-combobox + e-input-group) */
+.ct-sf.e-control-wrapper.e-combobox {
+  background-color: var(--ct-bg) !important;
+  border: 1px solid var(--ct-border) !important;
+  color: var(--ct-text) !important;
+  border-radius: var(--ct-radius) !important;
+  height: var(--ct-height) !important;
+  box-shadow: none !important;
+  overflow: hidden; /* ensures icons respect radius */
+}
+
+/* Input element inside */
+.ct-sf.e-control-wrapper.e-combobox input.e-input {
+  background: transparent !important;
+  color: var(--ct-text) !important;
+  height: calc(var(--ct-height) - 2px) !important;
+  padding: var(--ct-pad-y) var(--ct-pad-x) !important;
+}
+
+/* Placeholder */
+.ct-sf.e-control-wrapper.e-combobox input.e-input::placeholder {
+  color: var(--ct-muted) !important;
+}
+
+/* Dropdown & clear icons */
+.ct-sf.e-control-wrapper.e-combobox .e-input-group-icon.e-ddl-icon,
+.ct-sf.e-control-wrapper.e-combobox .e-clear-icon {
+  color: var(--ct-muted) !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+/* Focus ring + border color */
+.ct-sf.e-control-wrapper.e-combobox:focus-within {
+  box-shadow: 0 0 0 2px var(--ct-ring) !important;
+  border-color: var(--ct-ring-border) !important;
+}
+
+/* Popup panel (Syncfusion adds `cssClass` to popup too) */
+.e-popup.ct-sf .e-content {
+  background: #0f172a !important;                 /* slate-900 */
+  border: 1px solid var(--ct-border) !important;
+}
+
+.e-popup.ct-sf .e-list-item,
+.e-popup.ct-sf .e-list-item.e-item-focus {
+  background: #0f172a !important;
+  color: var(--ct-text) !important;
+}
+
+.e-popup.ct-sf .e-list-item:hover,
+.e-popup.ct-sf .e-list-item.e-active {
+  background: rgba(16,185,129,0.12) !important;   /* subtle emerald hover */
+}

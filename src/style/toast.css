@@ -1,0 +1,39 @@
+
+.app-toast .e-progress,
+.app-toast .e-toast-progress {
+  height: 3px;
+  opacity: 0.95;
+}
+
+.app-toast.e-toast-success .e-progress,
+.app-toast.e-toast-success .e-toast-progress {
+  background-color: #22c55e; 
+}
+
+
+.app-toast.e-toast-danger .e-progress,
+.app-toast.e-toast-danger .e-toast-progress {
+  background-color: #ef4444; 
+}
+
+
+.app-toast.e-toast-info .e-progress,
+.app-toast.e-toast-info .e-toast-progress {
+  background-color: #3b82f6; 
+}
+
+
+.app-toast.e-toast-warning .e-progress,
+.app-toast.e-toast-warning .e-toast-progress {
+  background-color: #f59e0b; 
+}
+
+
+.app-toast.e-toast-success .e-toast-close-icon:hover,
+.app-toast.e-toast-success .e-toast-close-icon:focus { color: #22c55e; }
+.app-toast.e-toast-danger .e-toast-close-icon:hover,
+.app-toast.e-toast-danger .e-toast-close-icon:focus { color: #ef4444; }
+.app-toast.e-toast-info .e-toast-close-icon:hover,
+.app-toast.e-toast-info .e-toast-close-icon:focus { color: #3b82f6; }
+.app-toast.e-toast-warning .e-toast-close-icon:hover,
+.app-toast.e-toast-warning .e-toast-close-icon:focus { color: #f59e0b; }
